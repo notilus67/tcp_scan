@@ -3,7 +3,9 @@ tcp connect / syn scan, for coursework only
 
 # requirements
 Python 3
+
 IPy
+
 scapy
 
 # usage
