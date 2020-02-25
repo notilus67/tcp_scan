@@ -4,7 +4,7 @@
 '''
 necessary lib: IPy (pip3 install IPy) & scapy (pip3 install scapy)
 
-usage: syn_scan.py [-h] target [-p <port range>] [-cp <top common ports>] [-ap <all ports]
+usage: syn_scan.py [-h] target [-p <port range>] [-cp <top common ports>] [-ap]
 
 examples: (sudo if Linux)
   python3 syn_scan.py https://librarysearch.royalholloway.ac.uk/ 
@@ -41,7 +41,7 @@ from scapy.all import *
 
 # argparse & help document
 parser = argparse.ArgumentParser(description='example: \n  python3 syn_scan.py 31.186.254.178-31.186.254.179 -p 8888 -cp 20', 
-                                usage='syn_scan.py [-h] target [-p <port range>] [-cp <top common ports>] [-ap <all ports]', formatter_class=argparse.RawTextHelpFormatter)
+                                usage='syn_scan.py [-h] target [-p <port range>] [-cp <top common ports>] [-ap]', formatter_class=argparse.RawTextHelpFormatter)
 parser.add_argument('target', help='\
     IP address,       e.g. 192.168.1.2\n\
     IP address range, e.g. 192.168.10.0-192.168.10.255\n\
